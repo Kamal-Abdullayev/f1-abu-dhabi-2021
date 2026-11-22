@@ -1,0 +1,17 @@
+Pictures used in the pitch deck (22 November 2026). The /_blob/ references only work inside the published deck.
+file in img/final      reference used in the slides
+cover.jpg              /_blob/f3192e0d96a1a3c87a42ddcf8bb9a366
+close.jpg              /_blob/331b41626192349e85f5b21f627cf196
+moment.jpg             /_blob/46f2afb6fae3fbf871c25e582fb4dbc9
+what.jpg               /_blob/9c43e4320cb77ab021e6ac266dab6c9e
+pit.jpg                /_blob/bc41e2012cd8f7ada841fd79f1ac96db
+cam_map.jpg            /_blob/4655f5b8cfc642d9d765c16aedd6a53a
+cam_chase.jpg          /_blob/1c73eb0ddf6bc6c65009abaa078d5981
+cam_tv.jpg             /_blob/8c208c664f418e52a1770cde409fcf88
+cam_dir.jpg            /_blob/5eab4d9e09a185b29039816ac1a722af
+car.jpg                /_blob/e3b04e18040f9c596da21d7c24cecdb9
+grid.jpg               /_blob/b568993c34f9e0be217916469bf8eeec
+golden.jpg             /_blob/2a6c5dcf1c158bd2f21fa996a0482e8f
+night.jpg              /_blob/320d8a0747b163c0e5c5c1937c052658
+dash.jpg               /_blob/0d852f2bfd9d50ba4907aac7a9c5cae2
+phone.jpg              /_blob/b8ef3f58f587cae20ef3fa49ba93f4f7

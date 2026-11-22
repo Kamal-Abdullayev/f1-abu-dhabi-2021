@@ -1,0 +1,196 @@
+ABU DHABI GRAND PRIX 2021 - RACE REPLAY
+Unofficial 3D reconstruction of the race at Yas Marina, 12 December 2021
+======================================================================
+
+WHAT THIS IS
+----------------------------------------------------------------------
+A replay of the real race, not a simulation. Every car crosses the
+finish line at its real time on every one of the 58 laps, so the order
+and the gaps at the line are those of the race. The final lap has its
+own button and camera sequence: the restart, the pass at Turn 5, the
+fight to Turn 9, the crew on the pit wall, the flag and the fireworks.
+
+Unofficial fan-made reconstruction. Not affiliated with Formula 1, the
+FIA, the teams or the drivers.
+
+
+WHAT YOU NEED
+----------------------------------------------------------------------
+- The file "index.html". The whole app is this one file.
+- A current web browser: Chrome, Edge, Firefox or Safari.
+- An internet connection when you open it. The page downloads the
+  Three.js 3D library from cdnjs.cloudflare.com each time it loads.
+- Nothing to install. No account, no server.
+
+
+OPEN IT
+----------------------------------------------------------------------
+Double-click "index.html". It opens in the default browser and
+starts playing by itself from the starting grid.
+
+For the best view, make the browser window full screen.
+
+
+THREE WAYS TO WATCH (buttons at the bottom right)
+----------------------------------------------------------------------
+Final lap     Jumps to the end of the safety car period and plays the
+              last lap at real speed with the director camera.
+              About two and a half minutes.
+Highlights    Plays the nine key moments at real speed and fast-forwards
+              between them. About 11 minutes.
+Full race     From the grid at real speed (1 hour 30 minutes). Use the
+              speed buttons to go faster.
+
+
+CONTROLS
+----------------------------------------------------------------------
+Playback bar (bottom)
+    Play / pause              Also the Space key
+    1x  4x  16x  60x          Playback speed
+    Timeline                  Click or drag to go to any moment. The
+                              marks are the nine chapters; click a mark
+                              or use the Chapters menu to jump.
+    Panels                    Hide or show the timing and detail panels
+
+Camera (top left)
+    Map                       Free overview. Follows the selected car.
+    Chase                     A camera attached to the selected car, or
+                              the leader. View buttons appear next to
+                              it: Behind, Front, Left, Right, Above and
+                              Onboard (from above the driver's head).
+    TV                        Trackside cameras
+    Director                  Scripted shots for the final lap
+    Camera pad                The small buttons next to the camera
+                              buttons: rotate left and right, tilt up
+                              and down, zoom in and out, reset. Hold a
+                              button to keep moving.
+
+Mouse, in the Map camera
+    Drag (left button)        Move the map
+    Right-button drag         Rotate and tilt
+    Shift + drag              Same as right-button drag
+    Scroll wheel              Zoom
+    Click a car               Select it; details show on the right
+    Click empty ground        Clear the selection
+
+Mouse, in the Chase camera
+    Drag                      Look around the car from any side
+    Scroll wheel              Closer or further away
+    A view button             Goes back to that fixed view
+
+Keys
+    Space                     Play / pause
+    Q  E                      Rotate left / right
+    R  F                      Tilt up / down
+    +  -                      Zoom in / out
+    0                         Reset the view
+
+See-through structures
+    When something stands between the camera and the car you are
+    looking at (the start gantry, the bridges over the track, the hotel
+    bridge and canopy, a grandstand roof), it turns see-through and
+    comes back when it is no longer in the way.
+
+Touch screen / phone
+    One finger drag           Move the map
+    Two-finger pinch          Zoom
+    Two-finger twist          Rotate
+    Tap a car                 Select it
+    Bottom sheet              Drag the handle to resize it
+
+Top bar
+    Search box                Driver, team, camera area or chapter
+    Start/finish, Turn 5,     Fly the camera to that part of the track
+      Chicane, Turn 9, Hotel
+    Bell                      Race log
+    Sun                       Daylight: view the scene in afternoon
+                              light at any moment of the race
+    i                         About this replay: what is real, what is
+                              estimated, credits
+
+Panels
+    Timing                    Position, gap, interval, last and best
+                              lap, tyres and their age, stops. Click a
+                              row to select that car. "On track" orders
+                              the rows by position on the road (an
+                              estimate between lines); "At the line"
+                              uses the last real line crossing.
+    Pit stops, Race log       Tabs next to Timing
+    Title as it stands        Championship points if the race ended now
+
+
+WHAT IS REAL AND WHAT IS ESTIMATED
+----------------------------------------------------------------------
+Real, from the published race record:
+    every lap time and line-crossing time, positions and gaps at the
+    line, pit stop laps and pit-lane times, tyre compounds, grid,
+    results, championship points. The lap times add up to the official
+    race time (1:30:17.345) and to every official gap.
+From race reports:
+    where the key moments happened (Turn 6 on lap 1, Perez against
+    Hamilton, Giovinazzi stopping at Turn 9, Latifi's crash at Turn 14,
+    the pass at Turn 5).
+Estimated or illustrative:
+    where each car is between two line crossings, speeds, side-by-side
+    moves, exact times of the safety car phases, the local clock (to
+    about 5 seconds), the look of the buildings, camera views, crew
+    celebrations, fireworks.
+The cars:
+    one shared 2021-style shape for all teams, painted in each team's
+    colour pattern from memory of the 2021 season, with the car number,
+    the driver's three-letter code and the team name as plain text.
+    Helmet colours are illustrative. No team's real bodywork, logos or
+    sponsor markings are reproduced.
+Not confirmed by a source:
+    the safety car colour, the order of the garages along the pit lane,
+    the position of the start line to within about 50 metres.
+
+
+CREDITS AND LICENCE
+----------------------------------------------------------------------
+Lap times, positions, pit stops, results: Jolpica F1 API
+  (Ergast-compatible). That data is licensed CC BY-NC-SA 4.0:
+  NON-COMMERCIAL USE ONLY, credit required. Because this page contains
+  a copy of that data, the page must not be used commercially without
+  the data provider's permission.
+Map data (c) OpenStreetMap contributors, ODbL.
+Tyre compounds per stint as published by RaceFans.
+Names appear as plain text only. No logos or sponsor artwork are used.
+
+
+GOOD TO KNOW
+----------------------------------------------------------------------
+- The light follows the real evening: golden hour at the start, sunset
+  around lap 22, floodlit night for the finish.
+- The replay pauses while the browser tab is in the background.
+- Reloading the page (F5 / Cmd+R) starts again from the grid.
+
+
+IF SOMETHING GOES WRONG
+----------------------------------------------------------------------
+Message "Three.js could not be loaded from the CDN"
+    The computer is offline, or the network blocks
+    cdnjs.cloudflare.com (some company networks do). Connect to the
+    internet or try another network.
+
+The dashboard shows but the 3D view is blank or black
+    WebGL is switched off. Turn on hardware acceleration:
+      Chrome / Edge: Settings > System > "Use graphics acceleration
+                     when available", then restart the browser.
+      Firefox:       Settings > General > Performance.
+
+Slow or choppy
+    Close other heavy tabs, plug in the charger, make the browser
+    window smaller. The scene has about 700,000 triangles; older
+    laptops without a graphics chip will be slow.
+
+The page does not start when opened by double-click
+    Opening by double-click has not been tested; the page was tested
+    served from a local web server. If double-click fails:
+      1. Open Terminal (Mac) or PowerShell (Windows).
+      2. Go to the folder that holds index.html.
+      3. Run:   python3 -m http.server 8000
+         (on Windows: python -m http.server 8000)
+      4. In the browser open:
+             http://localhost:8000/index.html
+    This needs Python installed on that computer.

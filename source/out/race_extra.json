@@ -1,0 +1,71 @@
+{
+  "about": "Hand-assembled facts for the 2021 Abu Dhabi GP replay. 'src' says where each item comes from: data = Jolpica timing data (exact), report = race reports read on the web, est = my estimate, assumed = not verified.",
+  "clock": {
+    "lightsOutLocal": "17:03:24",
+    "src": "est: pit time stamps minus line-crossing times give 17:03:20 plus up to 8 s; treat as approximate, +/- 5 s",
+    "sunsetLocal": "17:36",
+    "finishLocalApprox": "18:33:41"
+  },
+  "weather": {"sky": "clear", "track": "dry", "src": "report (Wikipedia infobox: Clear)"},
+  "teams": [
+    {"id": "mercedes", "code": "MER", "name": "Mercedes", "ui": "#00D2BE", "body": "0x121416", "second": "0x00D2BE", "accent": "0xC9CDD0"},
+    {"id": "red_bull", "code": "RBR", "name": "Red Bull Racing Honda", "ui": "#3D5BE0", "body": "0x1B2540", "second": "0xD0202E", "accent": "0xF2C200"},
+    {"id": "mclaren", "code": "MCL", "name": "McLaren", "ui": "#FF8700", "body": "0xFF8700", "second": "0x2B9FD8", "accent": "0x1A1A1A"},
+    {"id": "aston_martin", "code": "AMR", "name": "Aston Martin", "ui": "#1F8F7A", "body": "0x00594F", "second": "0xD8E000", "accent": "0xE5007D"},
+    {"id": "alpine", "code": "ALP", "name": "Alpine", "ui": "#0090FF", "body": "0x0A5FD0", "second": "0xF2F2F2", "accent": "0xE0162B"},
+    {"id": "ferrari", "code": "FER", "name": "Ferrari", "ui": "#DC0000", "body": "0xD40000", "second": "0x7A0A12", "accent": "0x111111"},
+    {"id": "alphatauri", "code": "AT", "name": "AlphaTauri", "ui": "#5E8FAA", "body": "0x1E2F4A", "second": "0xFFFFFF", "accent": "0xC8102E"},
+    {"id": "alfa", "code": "ARR", "name": "Alfa Romeo", "ui": "#B12039", "body": "0xF4F4F4", "second": "0x8A0A14", "accent": "0x111111"},
+    {"id": "haas", "code": "HAA", "name": "Haas", "ui": "#E6E6E6", "body": "0xF5F5F5", "second": "0xD0202E", "accent": "0x1F4EA1"},
+    {"id": "williams", "code": "WIL", "name": "Williams", "ui": "#3D7BFF", "body": "0x0A3D91", "second": "0xF2F2F2", "accent": "0xFFD200"}
+  ],
+  "garageOrderFromPitEntry": ["MER", "RBR", "MCL", "AMR", "ALP", "FER", "AT", "ARR", "HAA", "WIL"],
+  "garageOrderSrc": "assumed (2020 constructors' order, champions nearest pit entry). Data confirms only that every team's box is AFTER the timing line.",
+  "stints": {
+    "VER": ["S", "H", "H", "S"], "HAM": ["M", "H"], "SAI": ["S", "H"], "TSU": ["M", "H", "S"], "GAS": ["H", "M", "S"],
+    "BOT": ["M", "H"], "NOR": ["S", "H", "M"], "ALO": ["H", "M"], "OCO": ["S", "H"], "LEC": ["S", "H", "M"],
+    "VET": ["M", "H"], "RIC": ["S", "H", "S"], "STR": ["M", "H", "S"], "MSC": ["S", "H", "S"], "PER": ["S", "H", "H", "S"],
+    "LAT": ["M", "H"], "GIO": ["M", "H"], "RUS": ["M"], "RAI": ["M", "H"]
+  },
+  "stintsSrc": "report: RaceFans tyre table (C5 = soft S, C4 = medium M, C3 = hard H). Stint boundaries come from the pit laps in race_pack.json (data).",
+  "pitLane": {
+    "speedLimitKmh": 80,
+    "limiterStartPitDist": 200,
+    "limiterEndPitDist": 620,
+    "timingLinePitDist": 346,
+    "note": "est. Pit distances are metres along track_pack.pit.p. Data: 'dur' in race_pack.pits is 21.2-22.7 s between pit-in and pit-out loops; every in-lap is only ~2 s slow and every out-lap ~20.5 s slow, so all boxes are after the timing line and the stationary time is always on the out-lap. The exit road runs through a tunnel under Turn 1 and rejoins on the left at Turn 3; cars are not speed limited there but it is slow (average roughly 125 km/h)."
+  },
+  "dns": {"code": "MAZ", "grid": 20, "reason": "withdrawn before the race after a positive COVID-19 test; grid slot 20 stayed empty", "src": "data + report"},
+  "events": [
+    {"id": "start", "lap": 1, "where": "grid to Turn 1", "what": "Hamilton (P2, medium tyres) makes the better start and leads Verstappen (pole, soft tyres) into Turn 1. Norris drops from 3rd to 5th.", "src": "report + data (order after lap 1)"},
+    {"id": "t6", "lap": 1, "where": "Turn 6 / Turn 7 chicane", "what": "Verstappen brakes late down the inside of Turn 6. Both run wide; Hamilton goes across the run-off, missing Turn 7, and rejoins still in front. Race control: no investigation needed. Gap at the end of lap 1 is 1.114 s.", "src": "report + data (gap)"},
+    {"id": "ver_pit1", "lap": 13, "what": "Verstappen pits from 2nd: soft to hard. Hamilton pits a lap later: medium to hard. Perez stays out and leads laps 15-20.", "src": "data"},
+    {"id": "perez", "lap": 20, "where": "Turn 6 to Turn 9, laps 20-21", "what": "Hamilton catches Perez, who is on old soft tyres. They swap places more than once over about half a lap; Perez is still ahead at the end of lap 20, Hamilton gets by for good on lap 21. Verstappen's deficit falls from 8.7 s (end of lap 19) to 1.75 s (end of lap 21). Perez lets Verstappen through and pits at the end of lap 21.", "src": "data (gaps, order at the line) + report (the swapping; exact corners are my reconstruction: pass into Turn 6, re-pass before Turn 9)"},
+    {"id": "rai", "lap": 26, "where": "Turn 6", "what": "Raikkonen (completed 25 laps) has a brake problem, brushes the barrier at Turn 6, returns to the pits and retires. It was his last Grand Prix.", "src": "report + data"},
+    {"id": "rus", "lap": 27, "where": "pits", "what": "Russell (completed 26 laps) retires in the pits with a gearbox problem.", "src": "report + data"},
+    {"id": "gio", "lap": 35, "where": "Turn 9", "what": "Giovinazzi (completed 33 laps) stops at the side of the track at Turn 9 with a gearbox problem. Virtual safety car during the leader's laps 36 and 37.", "src": "report + data"},
+    {"id": "vsc_stops", "lap": 36, "what": "Under the virtual safety car Verstappen pits again (hard to new hard). Hamilton stays out. Gap goes from 5.7 s to 16.4 s, then Verstappen closes to about 11 s by lap 50.", "src": "data"},
+    {"id": "nor_punc", "lap": 48, "what": "Norris pits with a slow puncture.", "src": "report + data"},
+    {"id": "lat", "lap": 53, "where": "exit of Turn 14", "what": "Latifi (completed 50 laps), who had run wide at Turn 9 while fighting Schumacher, loses the car at the exit of Turn 14 and hits the barrier. Safety car deployed.", "src": "report + data"},
+    {"id": "sc_stops", "lap": 53, "what": "Verstappen pits for soft tyres (his third stop); Hamilton stays out on hard tyres fitted on lap 14 to keep track position. Perez also pits.", "src": "data + report"},
+    {"id": "queue", "lap": 56, "what": "Order on the road behind the safety car at the end of lap 56: Hamilton, then five lapped cars (Norris, Alonso, Ocon, Leclerc, Vettel), Verstappen, two more lapped cars (Ricciardo, Stroll), Sainz, Bottas, Schumacher (lapped), Tsunoda, Gasly. Perez retired in the pits on lap 55.", "src": "data"},
+    {"id": "unlap", "lap": 57, "what": "Race control first says lapped cars will not be allowed to overtake. On lap 57 it then tells only the five cars between Hamilton and Verstappen to overtake the safety car, and announces the safety car will come in at the end of the lap. Ricciardo, Stroll and Schumacher stay where they are.", "src": "report + data"},
+    {"id": "restart", "lap": 58, "what": "Green flag for one lap. Verstappen is 0.456 s behind Hamilton at the line. DRS is not available (not enabled until two laps after a restart).", "src": "data (gap); DRS rule from memory"},
+    {"id": "pass", "lap": 58, "where": "Turn 5", "what": "Verstappen, on five-lap-old soft tyres, dives down the inside into the Turn 5 hairpin and takes the lead.", "src": "report"},
+    {"id": "fightback", "lap": 58, "where": "back straight to Turn 6, then the straight to Turn 9", "what": "Hamilton stays in the slipstream and draws alongside on the run to Turn 9; Verstappen keeps the inside and stays ahead.", "src": "report (Hamilton tried to re-pass and Verstappen held on); the exact place and side are my reconstruction"},
+    {"id": "flag", "lap": 58, "what": "Verstappen wins by 2.256 s and becomes World Champion. Sainz is 3rd, 5.173 s behind.", "src": "data"}
+  ],
+  "aftermath": "Mercedes protested the result that evening; the stewards dismissed the protests and Mercedes later decided not to appeal. An FIA review published in March 2022 said the safety-car rules had not been applied correctly because of human error, said the race director had acted in good faith, and confirmed the result as final. The race director was replaced before the 2022 season.",
+  "aftermathSrc": "report (Wikipedia) + memory for the 'human error' wording",
+  "championship": {"before": {"VER": 369.5, "HAM": 369.5}, "after": {"VER": 395.5, "HAM": 387.5}, "note": "Verstappen led on wins (9 to 8) before the race. Constructors: Mercedes 613.5, Red Bull 585.5.", "src": "data"},
+  "points": [25, 18, 15, 12, 10, 8, 6, 4, 2, 1],
+  "fastestLap": {"code": "VER", "lap": 39, "time": "1:26.103", "src": "data"},
+  "safetyCar": {"look": "red coupe with an amber/green roof light bar, no badges", "src": "assumed from memory (not confirmed by a source)"},
+  "grid": {"poleSide": "left (main grandstand side)", "slotSpacing": 8, "src": "assumed"},
+  "credits": {
+    "timing": "Lap times, positions, pit stops, results: Jolpica F1 API (Ergast-compatible), data licensed CC BY-NC-SA 4.0 - non-commercial use only",
+    "map": "Map data (c) OpenStreetMap contributors, ODbL",
+    "tyres": "Tyre compounds per stint as published by RaceFans",
+    "disclaimer": "Unofficial fan-made reconstruction. Not affiliated with Formula 1, the FIA, the teams or the drivers. Car positions within a lap, speeds, camera views and team celebrations are estimated or illustrative."
+  }
+}

@@ -1,0 +1,8 @@
+[out:json][timeout:90];
+(
+  way["highway"="raceway"](24.452,54.585,24.492,54.625);
+  relation["route"="raceway"](24.452,54.585,24.492,54.625);
+  relation["type"="circuit"](24.452,54.585,24.492,54.625);
+  relation["name"~"Yas Marina",i](24.452,54.585,24.492,54.625);
+);
+out body geom;
